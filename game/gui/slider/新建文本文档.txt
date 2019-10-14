@@ -1,0 +1,45 @@
+
+        hbox:
+            pos(350,150)
+            style_prefix "slider"
+            box_wrap True
+            
+            vbox:  
+                add "gui/slider/preferences_text/文章设置.png"
+                add "gui/slider/preferences_text/wz003.png" ypos -20
+                #label _("文字显示速度")
+                bar value Preference("text speed") ypos -20
+                
+                add "gui/slider/preferences_text/wz005.png" ypos -30
+                #label _("自动模式等待时间")
+                bar value Preference("auto-forward time") ypos -30
+                
+            vbox:
+                add "gui/slider/preferences_text/音量设置.png"
+                if config.has_music:
+                    add "gui/slider/preferences_text/yl002.png" ypos -20
+                    #label _("音乐音量")
+                    hbox:
+                        bar value Preference("music volume") ypos -20
+
+                if config.has_sound:
+                    add "gui/slider/preferences_text/yl003.png" ypos -30
+                    #label _("音效音量")
+                    hbox:
+                        bar value Preference("sound volume") ypos -30
+                        if config.sample_sound:
+                            textbutton _("测试") action Play("sound", config.sample_sound)
+                            
+                if config.has_voice:
+                    add "gui/slider/preferences_text/yl004.png" ypos -30
+                    #label _("语音音量")
+                    hbox:
+                        bar value Preference("voice volume") ypos -30
+                        if config.sample_voice:
+                            textbutton _("测试") action Play("voice", config.sample_voice)
+                            
+                #if config.has_music or config.has_sound or config.has_voice:
+                #    null height gui.pref_spacing
+                #    textbutton _("Mute All"):
+                #        action Preference("all mute", "toggle")
+                #        style "mute_all_button"

@@ -1,0 +1,93 @@
+use game_menu(_(""), yinitial=1.0):
+        
+        style_prefix "history"
+        
+        viewport:
+            area (-100,-60,1280,720)
+            scrollbars "vertical"
+            mousewheel True
+            draggable True
+            pagekeys True
+            side_yfill True
+            
+            button:
+                pos(400 , 610)
+                maximum(264 , 98)
+                xalign 1.0 xoffset -20
+                yalign 1.0 yoffset -20
+                xfill True yfill True
+                idle_background "gui/gallery/tx≥Ãµt¡’001.png"
+                hover_background "gui/gallery/tx≥Ãµt¡’002.png"
+                action Return()
+
+
+
+
+
+
+
+
+
+
+####################
+
+
+
+
+tag menu
+    
+    frame:
+        add "gui/gallery/cg–¿…Õ.png" pos(-4,-4)
+
+        button:
+            xpos 1180 ypos 730
+            xmaximum 148 ymaximum 44
+            xalign 1.0 xoffset -20
+            yalign 1.0 yoffset -20
+            xfill True yfill True
+            idle_background "gui/gallery/∑µªÿ”Œœ∑001.png"
+            hover_background "gui/gallery/∑µªÿ”Œœ∑002.png"
+            action Return()
+    
+        ##################################################################################
+        
+        button:
+            pos(400 , 310)
+            maximum(264 , 98)
+            xalign 1.0 xoffset -20
+            yalign 1.0 yoffset -20
+            xfill True yfill True
+            idle_background "gui/gallery/tx‘¨—ﬁ001.png"
+            hover_background "gui/gallery/tx‘¨—ﬁ002.png"
+            action Show("yg")
+            #action Return()
+            
+        button:
+            pos(400 , 410)
+            maximum(264 , 98)
+            xalign 1.0 xoffset -20
+            yalign 1.0 yoffset -20
+            xfill True yfill True
+            idle_background "gui/gallery/txœƒæ≤001.png"
+            hover_background "gui/gallery/txœƒæ≤002.png"
+            action Return()
+            
+        button:
+            pos(400 , 510)
+            maximum(264 , 98)
+            xalign 1.0 xoffset -20
+            yalign 1.0 yoffset -20
+            xfill True yfill True
+            idle_background "gui/gallery/tx¡÷«Ÿ001.png"
+            hover_background "gui/gallery/tx¡÷«Ÿ002.png"
+            action Return()
+            
+        button:
+            pos(400 , 610)
+            maximum(264 , 98)
+            xalign 1.0 xoffset -20
+            yalign 1.0 yoffset -20
+            xfill True yfill True
+            idle_background "gui/gallery/tx≥Ãµt¡’001.png"
+            hover_background "gui/gallery/tx≥Ãµt¡’002.png"
+            action Return()
